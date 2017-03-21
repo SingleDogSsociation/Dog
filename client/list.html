@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<!--<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-8">
+				
+			</div>-->
+		</div>
+	</body>
+
+</html>
+<script src="lib/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$.ajax({
+		url: 'http://localhost:3000/gitlist',
+		dataType: 'jsonp',
+		method: 'get',
+		success: function(data) {
+						console.log(JSON.parse(data));
+			//解析
+			var json = JSON.parse(data);
+
+			var str ='';
+			var ler = json.result;
+
+			for(var i = 0; i < ler.length; i++) {
+				str += '<div class="row">' +
+					'<div class="col-md-2">' + ler[i].comment_content + '</div>' +
+					'<div class="col-md-2">' + ler[i].comment_mobile + '</div>' +
+					'<div class="col-md-8"><img src="'+ler[i].product_img+'"></div></div>'
+
+			}
+			$('.container').html(str);
+
+		}
+	})
+</script>
