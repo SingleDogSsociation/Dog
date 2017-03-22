@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+}
+.font{
+  font-size: 10px;
+  margin-right: 0px;
+  padding: 3px;
+  color: #6f6679;
+}
+.zhaopian{
+  margin-left: -280px;
+}
+.mar{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+}
+.fon{
+  font-size: 20px;
+  color: #666666;
+}
+#dr {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  ul {
+    width: 300%;
+    display: flex;
+    li {
+      -webkit-flex-grow: 1;
+      list-style: none;
+      img {
+        background-size: 100% 100%;
+        width: 100%;
+        height: 392px;
+      }
+    }
+  }
+}
+.cl{
+  margin: 10px;
+}

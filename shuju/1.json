@@ -1,0 +1,127 @@
+{
+    "lunbo":[
+      {
+        "id": "1",
+        "lunbo_img": "http://p1.qhmsg.com/t0182cde8867b60fb47.jpg"
+      },
+      {
+        "id": "2",
+        "lunbo_img": "http://p5.qhmsg.com/t01784029208c4f5dc3.png"
+      },
+      {
+        "id": "3",
+        "lunbo_img": "http://p8.qhmsg.com/t0155395105daaea95f.jpg"
+      }
+    ],
+    "guzhang":[
+      {
+        "id": "4",
+        "img": "http://p0.qhmsg.com/t012eb790a758fa2e6c.png",
+        "name": "屏幕"
+      },
+      {
+        "id": "5",
+        "img": "http://p0.qhmsg.com/t0194d1eced2bef5e12.png",
+        "name": "电池/充电/开机"
+      },
+      {
+        "id": "6",
+        "img": "http://p0.qhmsg.com/t01377a06cbd9e741aa.png",
+        "name": "按键"
+      },
+      {
+        "id": "7",
+        "img": "http://p0.qhmsg.com/t01c03b1c4e5c46b774.png",
+        "name": "声音/震动"
+      },
+      {
+        "id": "8",
+        "img": "http://p0.qhmsg.com/t01fd6a5c1614e27c18.png",
+        "name": "拍照录像"
+      },
+      {
+        "id": "9",
+        "img": "http://p0.qhmsg.com/t016c1523a292f76815.png",
+        "name": "外壳/边框"
+      },
+      {
+        "id": "10",
+        "img": "http://p0.qhmsg.com/t017cc5197fde915b4b.png",
+        "name": "进水入液/主板故障"
+      },
+      {
+        "id": "11",
+        "img": "http://p0.qhmsg.com/t017ef2394d9a6a8400.png",
+        "name": "其他故障"
+      },
+      {
+        "id": "12",
+        "img": "http://p0.qhmsg.com/t012c440d96e78b33cf.png",
+        "name": "个性化服务"
+      }
+    ],
+    "lunbo2":[
+      {
+        "id":"13",
+        "img": "https://p.ssl.qhmsg.com/t0197043d213b7245b4.jpg"
+      },
+      {
+        "id":"14",
+        "img": "https://p.ssl.qhmsg.com/t0155e97b9b8d8289bb.jpg"
+      },
+      {
+        "id":"15",
+        "img": "https://p.ssl.qhmsg.com/t01f7c5946eeb904191.png"
+      },
+      {
+        "id":"16",
+        "img": "https://p.ssl.qhmsg.com/t01f7b95b60f82d4493.jpg"
+      },
+      {
+        "id":"17",
+        "img": "https://p.ssl.qhmsg.com/t01205b78f25c5bb27f.jpg"
+      },
+      {
+        "id":"18",
+        "img": "https://p.ssl.qhmsg.com/t016df59070377fcd40.jpg"
+      },
+      {
+        "id":"19",
+        "img": "https://p.ssl.qhmsg.com/t013d8b7a34d12a1bca.jpg"
+      },
+      {
+        "id":"20",
+        "img": "https://p.ssl.qhmsg.com/t01198eddb45276c27e.jpg"
+      }
+    ],
+    "z1":{
+      "id":"21",
+      "img": "https://p.ssl.qhmsg.com/t018a0d4ca01a0a7b80.png"
+    },
+    "z2":{
+      "id":"22",
+      "img":"https://p.ssl.qhmsg.com/t0143badb130710aad6.jpg"
+    },
+    "z3":[
+      {
+        "id":"23",
+        "img":"img/1.png"
+      },
+      {
+        "id":"24",
+        "img":"img/2.png"
+      },
+      {
+        "id":"25",
+        "img":"img/3.png"
+      },
+      {
+        "id":"26",
+        "img":"img/4.png"
+      },
+      {
+        "id":"27",
+        "img":"img/5.png"
+      }
+    ]
+}
