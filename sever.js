@@ -82,5 +82,5 @@ app.post('/getlistt',function(req,res){
 
 
 app.listen(3000,function(){
-	console.log('服务器启动了1...')
+	console.log('服务器启动了2...')
 })
