@@ -158,7 +158,7 @@ $(function() {
 			var str2 = '';
 			var ler2 = json.product_list;
 			for(var i = 0; i < ler2.length; i++) {
-				str2 += '<div class="col-md-3 pf2">' + '<div class="row ha2">' +
+				str2 += '<div class="col-md-2 pf2">' + '<div class="row ha2">' +
 					'<div><img src="' + ler2[i].thum_img.min + '"></div>' +
 					'<div><p>' + ler2[i].title + '</p><strong>' + ler2[i].price + '</strong><p  class="z">' + ler2[i].selling_point + '</p><p>' + ler2[i].explain + '<p></div>' +
 					'</div></div>'
