@@ -4,6 +4,14 @@
     var fenli = $('#fen>li');
     var bmj = $('.bm_j');
     var dp = $('.dp');
+    $('#qwq').on('click',function(){
+        $(this).css('background','deepskyblue');
+        $('#qeq').css('background','white');
+    });
+    $('#qeq').on('click',function(){
+        $(this).css('background','deepskyblue');
+        $('#qwq').css('background','white');
+    });
     //鼠标移入banner分类
     daofena.on('mouseover',function(){
         daofena.show();
@@ -78,7 +86,7 @@
                 success:function(data){
                     // console.log(JSON.parse(data));
                     var json = JSON.parse(data);
-                    var str3 = '<div class="row">'
+                    var str3 = '<div class="row">';
                     for(var i = 0; i<json.shouji.length;i++){
                         str3+='<botton class="col-md-2" style="width: 115px;height: 40px; border: 1px solid #888888; text-align: center; line-height: 40px;margin-left: 18px;margin-bottom: 18px">'+json.shouji[i].name+'</botton>'
                     }
@@ -95,7 +103,7 @@
                 success:function(data){
                     // console.log(JSON.parse(data));
                     var json = JSON.parse(data);
-                    var str4 = '<div class="row">'
+                    var str4 = '<div class="row">';
                     for(var i = 0; i<json.mai.length;i++){
                         str4+='<botton class="col-md-2" style="width: 115px;height: 40px; border: 1px solid #888888; text-align: center; line-height: 40px;margin-left: 18px;margin-bottom: 18px">'+json.mai[i].q+'</botton>'
                     }
@@ -110,12 +118,6 @@
         fenli.css({'background':'url("https://p.ssl.qhmsg.com/t01c035e0988a964a21.png")','opacity':'1'});
         daofena.css('display','none');
         $('.wq').eq($(this).index()).css('z-index','-1');
-    });
-    dp.on('mouseover',function(){
-        bmj.eq($(this).index()).show();
-        // $('$(this)>bmj).show();
-    }).on('mouseout',function(){
-        bmj.css('display','none');
     });
     $.ajax({
         url:"http://localhost:3000/aassdd",
@@ -159,7 +161,7 @@
             for(var i = 0; i<json.zm.length; i++){
                 zm +='<a href="#a'+json.zm[i].id+'" aria-controls="a'+json.zm[i].id+'" role="tab" data-toggle="tab" style="width: 15px;height: 15px;padding-left: 2px;padding-right: 1px;padding-top: 0px ;padding-bottom: 1px;">'+json.zm[i].zm+'</a></li><li>'
             }
-            console.log(zm);
+            // console.log(zm);
             $('#zimu2').html(zm);
         }
     });
@@ -197,7 +199,7 @@
                 }
                 city+='</div><div role="tabpanel" class="tab-pane"';
             }
-            console.log(city);
+            // console.log(city);
             $('#cheng2').html(city);
         }
     });
@@ -293,43 +295,51 @@
             $.post('http://localhost:3000/getlist',
                 {page_index:page_index,page_size:page_size},
                 function(res){
-                    console.log(res)
+                    // console.log(res)
                     var str = '';
                     var lists = res.result;
-                    console.log(lists.length);
+                    // console.log(lists.length);
                     for(var i = 0; i<lists.length;i++){
-                        str+='<div class="row dp"><div class="col-md-1"><img class="d1_img" ' +
+                        str+='<div class="row"><div class="dp" id="'+i+'"><div class="col-md-1"><img class="d1_img" ' +
                             'src="'+lists[i].shop_ico+'"></div><div class="col-md-6"><ul class="d_font">' +
                             '<li><a class="green">'+lists[i].shop_name+'</a>店铺等级:<img src="img/z.png"><img src="img/z.png">' +
                             '</li><li><span>主营：'+lists[i].shop_desc+'</span></li><li><span>地址:'+lists[i].addr+'</span>' +
                             '</li></ul></div><div class="col-md-3"><ul class="d_font"><li><img src="img/qian.png"><span>先行赔付' +
                             '</span></li><li><img src="img/v.png"><span>同城帮认证</span></li><li><span>人气:'+lists[i].shop_visit
-                            +'</span></li></ul></div><div class="col-md-2"><div class="bm_j"><span>进入店铺</span></div></div>' +
-                            '</div>';
+                            +'</span></li></ul></div><div class="col-md-2"><div class="bm_j" id="a'+i+'"><span>进入店铺</span></div></div>' +
+                            '</div></div>';
                     }
-                    console.log(str);
+                    // console.log(str);
                     $('#aaass').html(str);
                 }
             )
         }
+        $('#aaass').on('mouseover',$('.dp'),function(){
+            // console.log(222);
+            $('.bm_j').eq($(this).index()).css('display','block');
+            // console.log($(this).index());
+            // $('$(this)>bmj).show();
+        }).on('mouseout',function(){
+            $('.bm_j').css('display','none');
+        });
         $.get('http://localhost:3000/qqqq',function(res){
             var total = res.length;
             initPagination(total);
-        })
+        });
         var initPagination = function(total){
-            console.log("total:"+total);
+            // console.log("total:"+total);
             $("#Pagination").pagination(total*2,{
                 num_edge_entries:1,
                 num_display_entries:5,
                 items_per_page:10,
                 callback:pageselectCallback,
-                prev_text:'上',
-                next_text:'下'
+                prev_text:'上一頁',
+                next_text:'下一頁'
             })
         };
         function pageselectCallback(page_index, jq){
             getdata(page_index,5);
             return false;
         }
-    })
+    });
 })(Zepto);

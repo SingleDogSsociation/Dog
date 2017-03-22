@@ -2,6 +2,9 @@ body{
   padding: 0;
   margin: 0;
 }
+a{
+  text-decoration: none;
+}
 li{
   list-style: none;
 }
@@ -27,13 +30,13 @@ li{
 .ul{
   padding: 0;
   background-size: 100% 100%;
-  height: 322px;
+  height: 320px;
   background-image: url("https://p.ssl.qhmsg.com/t01280de86e9d9dc470.png");
 }
 .li{
   background-image: url("https://p.ssl.qhmsg.com/t01c035e0988a964a21.png");
   height: 81px;
-  width: 220px;
+  width: 250px;
   font-size: 15px;
   line-height: 80px;
   text-align: center;
@@ -254,7 +257,7 @@ li{
   text-align: center;
 }
 .daofen{
-  position: absolute;top: 0; left: 235px;border: 1px solid #118855;
+  position: absolute;top: 0; left: 265px;border: 1px solid #118855;
   background: #f7f7f7;
   padding-top: 25px;
   display: none;

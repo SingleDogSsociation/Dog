@@ -2,17 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>同城帮</title>
       <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
       <link rel="stylesheet" href="dist/main.min.css">
       <link rel="stylesheet" href="dist/pagination.css">
   </head>
   <body style="background: #f6f6f6;">
+
+
   <div class="container" style="height: 29px;">
       <!--导航-->
       <div class="row" style="height: 30px; background: #f7f7f7;">
           <div class="col-md-2">
-              <a class="navbar-brand font" style="color: green;" href="#">北京</a>
+              <a class="navbar-brand font" style="color: green;" href="#" id="ttcheng">北京</a>
               <a class="navbar-brand font" href="#" id="ss">[切换城市]</a>
               <a class="navbar-brand font">|</a>
               <a class="navbar-brand font" href="#">同城帮首页</a>
@@ -108,11 +110,11 @@
                   <div class="row" style="width: 100%;">
                       <!--//左侧-->
                       <div class="col-md-4">
-                          <ul class="nav nav-tabs" role="tablist">
-                              <li role="presentation" class="active"><a href="#shouji" aria-controls="home" role="tab" data-toggle="tab">手机注册</a></li>
-                              <li role="presentation"><a href="#youxiang" aria-controls="profile" role="tab" data-toggle="tab">邮箱注册</a></li>
+                          <ul class="nav nav-tabs" role="tablist" style="position: relative;left: 10px;top: 30px;">
+                              <li role="presentation" class="active"><a href="#shouji" id="qwq" aria-controls="home" role="tab" data-toggle="tab" style="background: deepskyblue;">手机注册</a></li>
+                              <li role="presentation"><a href="#youxiang" id="qeq" aria-controls="profile" role="tab" data-toggle="tab">邮箱注册</a></li>
                           </ul>
-                          <span style="font-size: 10px; position: relative;top: 80%">已有账号，</span><a style="font-size: 10px;" href="#" data-toggle="modal" data-target="#denglu" data-dismiss="modal" aria-label="Close">立即登录</a>
+                          <span style="font-size: 10px;display: block;position: relative; top: 180px;">已有账号，<a style="font-size: 10px;" href="#" data-toggle="modal" data-target="#denglu" data-dismiss="modal" aria-label="Close">立即登录</a></span>
                       </div>
                       <!--//右侧-->
                       <div class="col-md-8">
@@ -244,7 +246,6 @@
                           <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                           <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                       </ol>
-
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                           <div class="item active">
@@ -267,10 +268,10 @@
                   <div class="row">
                       <div class="col-md-2">
                           <ul class="ul" style="position: absolute; top: -323px;" id="fen">
-                              <li class="li">修手机/Pad<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 65px;z-index: -1;"></span></li>
-                              <li class="li">修电脑<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 78px;z-index: -1;"></span></li>
-                              <li class="li">卖手机/电脑<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 62px;z-index: -1;"></span></li>
-                              <li class="li">买二手机<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 72px;z-index: -1;"></span></li>
+                              <li class="li">修手机/Pad<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 80px;z-index: -1;"></span></li>
+                              <li class="li">修电脑<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 93px;z-index: -1;"></span></li>
+                              <li class="li">卖手机/电脑<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 77px;z-index: -1;"></span></li>
+                              <li class="li">买二手机<span class="wq" style="display: inline-block;width: 1px;height: 1px;border: 10px solid transparent;border-right-color: #fff;position: relative;left: 87px;z-index: -1;"></span></li>
                           </ul>
                       </div>
                       <div class="col-md-7 daofen" style="z-index: 100" id="daofena"></div>
@@ -346,7 +347,6 @@
                           <span class="ss">搜索</span>
                       </button>
                   </div>
-
                   <div class="row bm_2">
                       <ul class=" nav nav-tabs" role="tablist">
                           <li class="col-md-2 active" role="presentation">
@@ -376,32 +376,7 @@
                         <!--//分页-->
                         <center><div id="Pagination" class="pagination"></div></center>
                     </div>
-                      <!--<div class="row dp">-->
-                          <!--<div class="col-md-1">-->
-                              <!--<img class="d1_img" src="http://p7.qhimg.com/edr/140__140/ss/30_105/t01ac02fad9b0458ec4.jpg">-->
-                          <!--</div>-->
-                          <!--<div class="col-md-6">-->
-                              <!--<ul class="d_font">-->
-                                  <!--<li><a class="green">联金诚维修中心</a>店铺等级：<img src="img/z.png"><img src="img/z.png"><img src="img/z.png"><img src="img/z.png"></li>-->
-                                  <!--<li><span>主营：电脑维修、apple、dell外星人维修、电脑配件、路由器..</span></li>-->
-                                  <!--<li>地址：北京西城区西直门内大街前桃园1号楼4门底商</li>-->
-                              <!--</ul>-->
-                          <!--</div>-->
-                          <!--<div class="col-md-3">-->
-                              <!--<ul class="d_font">-->
-                                  <!--<li><img src="https://p.ssl.qhmsg.com/t01dddbd1775cf1d1d7.png"><span>先行赔付</span></li>-->
-                                  <!--<li><img src="https://p.ssl.qhmsg.com/t0141b1afb0bd0d7e2e.png"><span>同城帮认证</span></li>-->
-                                  <!--<li>人气：99255次浏览</li>-->
-                              <!--</ul>-->
-                          <!--</div>-->
-                          <!--<div class="col-md-2">-->
-                              <!--<div class="bm_j">-->
-                                  <!--<span>进入店铺</span>-->
-                              <!--</div>-->
-                          <!--</div>-->
-                      <!--</div>-->
-
-                   </div>
+                  </div>
               </div>
               <div class="col-md-3">
                   <div class="bb">
@@ -504,10 +479,10 @@
   </div>
   <!--//头部城市分类-->
   <div id="mm3" style="background: #fbfbfb;width: 460px; border: 1px solid #cfcfcf;padding-top: 15px;padding-left: 10px;padding-right: 10px;padding-bottom: 10px;position: absolute;top: 30px;left: 130px; display: none;">
-      <span>城市列表</span><button style="float: right" id="guan">关闭×</button>
+      <span>城市列表</span><button style="float: right" id="guan">關閉×</button>
 
       <!-- Nav tabs -->
-      <div style="background: #fff;width: 435px; border: 1px solid #cfcfcf;;margin-top: 8px;padding-top: 18px;padding-left: 13px">
+      <div style="background: #fff;width: 435px; border: 1px solid #cfcfcf;;margin-top: 8px;padding-top: 18px;padding-left: 13px" id="tts">
           <div class="row">
               <div class="col-md-2">
                   <span style="color:#888888; font-size: 12px">热门</span>
@@ -564,15 +539,16 @@
   </div>
   <img src="img/333.png" style="position: fixed; top: 30%;right: 0;">
 
+
   </body>
+
+
   <script src="dist/jquery-3.1.0.min.js"></script>
   <script src="zepto.min.js"></script>
-
   <script type="text/javascript" src="dist/jquery.pagination.js"></script>
-
   <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=695c999a6863d9efc03c05efe146f50e"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="//webapi.amap.com/ui/1.0/main.js"></script>
   <script src="src/js/index.js"></script>
-
+  
 </html>
